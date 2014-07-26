@@ -6,10 +6,10 @@ package contabancaria;
  */
 public class ContaCorrente extends Conta{
 
-    @Override
-    public void atualiza(double taxa){
-            this.saldo += ((taxa*2)*this.saldo/100);
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
     }
+    
 
     @Override
     public void depositar(double valor){

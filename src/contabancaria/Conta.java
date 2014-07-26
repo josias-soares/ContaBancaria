@@ -5,10 +5,19 @@ package contabancaria;
  * @author Josias soares
  */
 public abstract class Conta {
-    public double saldo;
+    protected double saldo;
+    protected Cliente cliente;
+    
+    public Conta(Cliente cliente){
+        this.cliente = cliente;
+    }
 
-    public Conta(){
+    public Cliente getCliente() {
+        return cliente;
+    }
 
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public double getPegarSaldo(){
@@ -29,5 +38,7 @@ public abstract class Conta {
             }
     }
 
-    public abstract void atualiza(double taxa);
+    public void atualiza(double taxa){
+      this.saldo += ((taxa*getCliente().getTipoCliente().getFatorMultiplicacao())*this.saldo/100);
+    }
 }

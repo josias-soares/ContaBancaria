@@ -14,13 +14,13 @@ public class TestaAtualizador{
 
 		for (int i =0; i <=9; i++) {
 			if (i < 4) {
-				Conta cp = new ContaPoupanca();
+				Conta cp = new ContaPoupanca(new Cliente("Josias",TipoCliente.VIP));
                                 if (i == 0 ) System.out.println("=== Conta Poupança ===");
 				cp.depositar(123*i);
                                 adc.aplicaTaxa(cp);
 				contas[i] = cp;
 			}else {
-				Conta cc = new ContaCorrente();
+				Conta cc = new ContaCorrente(new Cliente("Josias",TipoCliente.UNIVERSITÁRIO));
                                 if (i == 5 ) System.out.println("=== Conta Corrente ===");
 				cc.depositar(123*i);
                                 adc.aplicaTaxa(cc);
