@@ -18,7 +18,7 @@ public class TestaGerenciadorDeImpostoDeRenda {
         gerenc.adiciona(sv);
         
         ContaCorrente cc = new ContaCorrente(new Cliente("Josias", TipoCliente.CORPORATIVO));
-        cc.depositar(1000);
+        cc.deposita(1000);
         gerenc.adiciona(cc);
         
         System.out.println("Total de tributos: " + gerenc.getSomaTributos());

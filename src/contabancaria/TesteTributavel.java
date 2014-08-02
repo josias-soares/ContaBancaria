@@ -15,7 +15,7 @@ import interfaces.Tributavel;
 public class TesteTributavel {
     public static void main(String args[]){
         ContaCorrente cc  = new ContaCorrente(new Cliente("Josias",TipoCliente.UNIVERSITÁRIO));
-        cc.depositar(1000);
+        cc.deposita(1000);
         System.out.println(cc.calculaTributos());
         
         //Testando o polimorfismo

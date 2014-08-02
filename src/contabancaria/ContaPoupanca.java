@@ -9,14 +9,14 @@ public class ContaPoupanca extends Conta{
     public static final int VALOR_PADRAO_MULTIPLICACAO = 3;
     public static final double VALOR_DESCONTO_DEPOSITO = 0.10;
 
-    
     @Override
     public void atualiza(double taxa){
         this.saldo += ((taxa*VALOR_PADRAO_MULTIPLICACAO)*this.saldo/100);
     }
     
     @Override
-    public void depositar(double valor){
+    public void deposita(double valor){
+        super.deposita(valor);
         this.saldo = valor - VALOR_DESCONTO_DEPOSITO;
     }
 }
