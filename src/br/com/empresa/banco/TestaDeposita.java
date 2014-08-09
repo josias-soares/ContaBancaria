@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 
-package contabancaria;
+package br.com.empresa.banco;
+
+import br.com.empresa.banco.conta.Cliente;
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaPoupanca;
+import br.com.empresa.banco.conta.TipoCliente;
 
 /**
  *
@@ -12,7 +17,7 @@ package contabancaria;
  */
 public class TestaDeposita {
     public static void main(String[] args){
-        Conta cp = new ContaPoupanca();
+        Conta cp = new ContaPoupanca(new Cliente("Josias",TipoCliente.VIP));
         try {
             cp.deposita(-100);
             System.out.println("Valor depositado");

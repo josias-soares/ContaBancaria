@@ -1,6 +1,7 @@
-package contabancaria;
+package br.com.empresa.banco.conta;
 
-import Exception.ValorInvalidoException;
+import br.com.empresa.banco.conta.Cliente;
+import br.com.empresa.banco.conta.ValorInvalidoException;
 
 /**
  *

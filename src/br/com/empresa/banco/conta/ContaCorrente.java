@@ -1,6 +1,6 @@
-package contabancaria;
+package br.com.empresa.banco.conta;
 
-import interfaces.Tributavel;
+import br.com.empresa.banco.sistema.Tributavel;
 
 /**
  *

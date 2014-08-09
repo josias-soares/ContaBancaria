@@ -1,4 +1,4 @@
-package contabancaria;
+package br.com.empresa.banco.conta;
 
 /**
  *
@@ -8,6 +8,9 @@ public class ContaPoupanca extends Conta{
     
     public static final int VALOR_PADRAO_MULTIPLICACAO = 3;
     public static final double VALOR_DESCONTO_DEPOSITO = 0.10;
+
+    public ContaPoupanca(Cliente cliente) {
+    }
 
     @Override
     public void atualiza(double taxa){

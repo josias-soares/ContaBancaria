@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package interfaces;
+package br.com.empresa.banco.sistema;
 
 /**
  *

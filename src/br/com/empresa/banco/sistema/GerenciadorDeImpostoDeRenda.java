@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 
-package contabancaria;
-
-import interfaces.Tributavel;
+package br.com.empresa.banco.sistema;
 
 /**
  *
